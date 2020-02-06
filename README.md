@@ -4,7 +4,7 @@ Password generator!!!
 
 ## GIVEN I need a new, secure password
 
-Pseudocode:
+Acceptance Criteria:
 
 1. WHEN I click the button to generate a password
 
@@ -34,6 +34,7 @@ Pseudocode:
 
 14THEN the password is either displayed in an alert or written to the page
 
+Pseudocode:
     start:var, functions, listener, if , if else, getElementById, confirm and alerts  -    Actions needed
 
 WHEN: button pushed:                                      document.getElementById(id).onclick = function(){code}
