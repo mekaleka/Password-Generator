@@ -4,6 +4,11 @@ Password generator!!!
 
 ## GIVEN I need a new, secure password
 
+In this READme I have copied my original notes for pseudocode based on the acceptance criteria. I then attempted to pseudocode further by indicating
+what elements I will need to impliment into my js code file in addition to what was already there. What I have in my js file is mostly what I have taken from class and I am having trouble being able to put the correct code into place. I still need to do more study and research with js just to find my starting point, if you know what I mean. I did get some help from Dane who slacked me a bit of code for reference and will try to make it my own while understanding that concept as well. I will try to reach out to you today and I have a tutor scheduled for Thursday and Friday for additional help. 
+
+
+
 Acceptance Criteria:
 
 1. WHEN I click the button to generate a password
