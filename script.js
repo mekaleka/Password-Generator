@@ -1,8 +1,8 @@
-//code snippit for reference not for copy
-var specialCharacters = ["!", "?", "$", "#", "@", "&"]
-var numericArray = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9",]
-var uppercaseArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
-var lowercaseArray = ["a","b","c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+
+var special = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+var numeric = "0123456789";
+var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var lowercase = "abcdefghijklmnopqrstuvwxyz";
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
@@ -15,6 +15,10 @@ function writePassword() {
     )
   );
 
+  // function generatePassword(options) {
+  //   var password = "";
+  // }
+
   var lowerCase = confirm("Do you want lowercase charicters?");
   var upperCase = confirm("Do you want uppercase charicters?");
   var numericChars = confirm("Do you want numeric characters?");
@@ -26,53 +30,55 @@ function writePassword() {
     numericChars: numericChars,
     specialChars: specialChars
   });
+
+  while (
+    params.length < 8 ||
+    params.length > 128
+    params.length === undefined
+    {
+      params.length = perseInt(
+          prompt(
+            "How long would you like your password to be? Greater then 8 or less then 128."
+          )
+        );
+          }
+
   var passwordText = document.querySelector("#password");
   //.querySelector is object and .document is the methode
 
   passwordText.value = password;
 }
 
-function generatePassword(params) {
+function generatePassword(options) {
   var password = "";
-
+  
   // concat the characters to the password variable defined above
-  for (i = 0; i < length; i++) {
-    // if they selected lowercase then pull from lowercase array and add to new array which is the password
-    if (params.lowerCase) {
-      // pull from lowercase array randomly and add an element to a new array
-      
-        password += lowerCaseArray[Math.floor(Math.random() * lowerCaseArray.length)]
-      
-      console.log(finalPassword);
+  // if they selected lowercase then pull from lowercase array and add to new array which is the password
+  // pull from lowercase array randomly and add an element to a new array
+  for (let i = 0; i < length; i++) {
+    if (options.upperCase) {
+      password += getRandomValue(uppercase);
     }
-    if (upperCase === true) {
-      finalPassword.push(
-        upperCaseArray[Math.floor(math.random() * upperCaseArray.length)]
-      );
-    }
-    if (numericChars === true) {
-      finalPassword.push(
-        numericCharsArray[math.floor(math.random() * numericCharsArray.length)]
-      );
-    }
-    if (specialChars === true) {
-      finalPassword.push(
-        specialCharacters[
-          math.floor(math.random() * specialCharsactersArrays.length)
-        ]
-      );
-      console.log(finalPassword);
-      //if they selected lowercase, uppercase, numeric, and or special charicters, then pull from uppercase array and add to new array which is the password
-    }
+    if (options.lowerCase)
+    password += getRandomValue(lowercase);
   }
+    if (options.specialChars)
+    password += getRandomValue(special)
 
-  return password.slice(0, params.length);
+    if (options.numericChars)
+    password += getRandomValue(numeric)
+
+      console.log(finalPassword);
+    }
+  
+  //if they selected lowercase, uppercase, numeric, and or special charicters, then pull from uppercase array and add to new array which is the password
+  
+  return password.slice(0, params.length);{
 }
 
 function getRandomValue(str) {
   return str[Math.floor(Math.random() * str.length)];
 }
-
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
