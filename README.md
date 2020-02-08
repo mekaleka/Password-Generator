@@ -1,43 +1,10 @@
 # Password-Generator
 
-Password generator!!!
+Updated Js with comments for final submission. 
 
-## GIVEN I need a new, secure password
-
-In this READme I have copied my original notes for pseudocode based on the acceptance criteria. I then attempted to pseudocode further by indicating
-what elements I will need to impliment into my js code file in addition to what was already there. What I have in my js file is mostly what I have taken from class and I am having trouble being able to put the correct code into place. I still need to do more study and research with js just to find my starting point, if you know what I mean. I did get some help from Dane who slacked me a bit of code for reference and will try to make it my own while understanding that concept as well. I will try to reach out to you today and I have a tutor scheduled for Thursday and Friday for additional help. 
+Password generator [Link to deployed App](https://mekaleka.github.io/Password-Generator/)
 
 
-
-Acceptance Criteria:
-
-1. WHEN I click the button to generate a password
-
-2. THEN I am presented with a series of prompts for password criteria
-
-3. WHEN prompted for password criteria
-
-4. THEN I select which criteria to include in the password
-
-5. WHEN prompted for the length of the password
-
-6.THEN I choose a length of at least 8 characters and no more than 128 characters
-
-7.WHEN prompted for character types to include in the password
-
-8.THEN I choose lowercase, uppercase, numeric, and/or special characters
-
-9.WHEN I answer each prompt
-
-10.THEN my input should be validated and at least one character type should be selected
-
-11.WHEN all prompts are answered
-
-12.THEN a password is generated that matches the selected criteria
-
-13.WHEN the password is generated
-
-14THEN the password is either displayed in an alert or written to the page
 
 Pseudocode:
     start:var, functions, listener, if , if else, getElementById, confirm and alerts  -    Actions needed
