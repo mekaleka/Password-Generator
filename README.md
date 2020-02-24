@@ -6,4 +6,4 @@ The Password Generator allows for the user to generate a random password that ha
 
 Michael Plichta
 
-[Link to deployed App](https://mekaleka.github.io/Password-Generator/)
+[Link to deployed App](https://mekaleka.github.io/password-generator/)
