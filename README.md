@@ -1,30 +1,12 @@
-# Password-Generator
+# Password Generator
 
-Updated Js with comments for final submission. 
+![passwordgenerator](https://user-images.githubusercontent.com/58678985/75122480-0d195c80-565b-11ea-92fa-acbc0e3880f7.png)
+
+The Password Generator allows for the user to generate a random password that has multiple characters. It allows for the user to generate a password that is between 8 and 128 random characters and is very quick. In the event that a someone needs to create a good password this concept would work. This is a great project because it is not super complicated and can be inputed in any application. It is unique because is offers a wide variety of options for what type of password the user can create. 
+
+Michael Plichta
 
 Password generator [Link to deployed App](https://mekaleka.github.io/Password-Generator/)
 
 
 
-Pseudocode:
-    start:var, functions, listener, if , if else, getElementById, confirm and alerts  -    Actions needed
-
-WHEN: button pushed:                                      document.getElementById(id).onclick = function(){code}
-THEN: is presented with prompts for password criteria:    var ??? = prompt ("prompt 1")("prompt 2")("prompt 3") ("prompt 4") if matches true, else false
-
-WHEN: create prompts for password criteria:               var ??? = prompt ("passwordCriteria")
-THEN: select what criteria to include:                    var confirmCriteria ("")
-WHEN: prompted for password length:                       var ??? = prompt ("passLength") if matches true, else false
-THEN: choose length of 8 characters, no more then 128:    var ??? = prompt ("charLengthMin")("charLengthMax") if min char is more then 8 and less then 128 true, else false
-
-WHEN: prompted what charicter types to be included:       var ??? = prompt ("charType")
-THEN: choose lowercase, uppercase, numeric, and/or special charicters:          document.getElementById("btn") . . addEventListener("click", ???);
-
-WHEN: when each prompt is answered:                     document.getElementById("btn").addEventListener("click", ???);
-THEN: input is validated & 1 char type is selected:       function?
-WHEN: all prompts answered:                               function?
-THEN: pass is generated that matches criteria:          function generatePassword(){
-                                                          return "SuperSecretPassword1098";
-                                                        }
-WHEN: pass is generated:                                  function?
-THEN: password is displayed in alirt or written in page   function?
